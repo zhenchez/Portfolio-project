@@ -172,7 +172,7 @@ span {
 .project-info {
    display: inline-block;
    width: 400px;
-   height: 330px;
+   height: 380px;
    border-radius: 5px;
    margin: 20px auto;
    cursor: pointer;
@@ -190,7 +190,7 @@ span {
    object-position: center;
 }
 .project-details {
-   margin: 2px 20px;
+   margin: 8px 20px;
 }
 .project-details a {
    color: black;
