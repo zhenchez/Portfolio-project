@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+h1 {
+    color: white;
+    font-family: poppins;
+    margin: 20px 0px;
+}
+p {
+    color: white;
+    font-family: poppins;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+.card {
+    width: 200px;
+    height: 400px;
+    padding: 50px;
+}
+button {
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    border: none;
+}
+button:hover {
+    box-shadow: 0px 0px 20px white;
+    border: 3px solid white;
+}
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+.container {
+    display: flex;
+    align-self: center;
+    width: fit-content;
+}
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 990px) {
+    .container {
+        flex-direction: column;
+    }
+    .card {
+        height: auto;
+    }
+    .box {
+        height: auto;
+    }
+    .sedans {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 20px;
+    }
+
+}

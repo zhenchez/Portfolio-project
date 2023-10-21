@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Orion Spaces</title>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="style.css">
+   
+</head>  
+<body>
+
+   <!-- header -->
+   <header class="header">
+      <a href="#" class="logo">Orion Spaces</a>
+
+      <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+
+      <nav class="navbar">
+         <a href="#home" class="active" onclick="enableHome()">Home</a>  
+         <a href="#about" onclick="enableAbout()">About</a>  
+         <a href="#contact" onclick="enableContact()">Contact</a>  
+      </nav>
+   </header>
+
+   <!-- home -->
+   <section class="home" id="home">
+      <div class="home-container">
+         <h3>Hello, It's the <span>CEO</span> of Orion Spaces</h3>
+         <h1>Zhenou Chen</h1>
+
+         <div class="social-media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+         </div>
+         <a href="login.html" class="login">Login for more info.</a>
+      </div>
+
+      <div class="home-img">
+         <img src="img/logo.png">
+      </div>
+   </section>
+
+   <!-- about -->
+   <section class="about" id="about">
+      <div class="about-img">
+         <img src="img/zzbeatz.png">
+      </div>
+      
+      <div class="about-container">
+         <h2 class="about-heading">Orion Spaces <span>OWNS</span> zb3atz</h2>
+         <h1>And much more!</h1>
+
+         <a href="https://www.youtube.com/@zb3atz110/videos" class="checkout">Check out zb3atz.</a>
+      </div>
+   </section>
+
+   <!-- contact -->
+   <section class="contact" id="contact">
+      <h2 class="contact-heading">Contact <span>Us!</span></h2>
+
+      <form action="#">
+         <div class="input-box">
+            <input id="name" type="text" placeholder="Full Name">
+            <input id="mail" type="email" placeholder="Email Address">
+         </div>
+         <div class="input-box">
+            <input id="phone" type="number" placeholder="Phone Number">
+            <input id="subject" type="text" placeholder="Subject">
+         </div>
+         <textarea id="msg" cols="30" rows="10" placeholder="Your Message"></textarea>
+         <input type="submit" value="Send Message" class="login" onclick="submitMsg()">
+      </form>
+   </section>
+
+   <!-- footer -->
+   <footer class="footer">
+      <div class="footer-container">
+         <p>Copyright &copy; 2023 by Orion Spaces | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-goTop">
+         <a href="#home"><i class='bx bxs-chevrons-up'></i></a>
+      </div>
+   </footer>
+
+   
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+   <script src="myscript.js"></script>
+</body>
+</html>

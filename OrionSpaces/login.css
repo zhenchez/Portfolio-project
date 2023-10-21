@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   outline: none;
+   scroll-behavior: smooth;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --bg-color: #fff;
+   --second-bg-color: #fdfdfd;
+   --text-color: #242627;
+   --main-color: #27a4b8;
+}
+
+html {
+   font-size: 100%;
+   overflow-x: hidden;
+}
+
+body {
+   background: var(--bg-color);
+   color: var(--text-color);
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.login {
+   width: 450px;
+   background: var(--second-bg-color);
+   padding: 5rem;
+   border-radius: .5rem;
+   position: relative;
+   box-shadow: 0 4rem 8rem var(--text-color);
+}
+
+.login-header,
+.signup {
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+}
+
+.login-header h1 {
+   font-size: 3.6rem;
+   font-weight: 400;
+}
+
+.login-header p {
+   font-size: .9rem;
+   font-weight: 500;
+}
+
+.login-form {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+.form-item {
+   margin-top: 1.5rem;
+   position: relative;
+}
+
+.form-item label {
+   position: absolute;
+   font-size: 1.4rem;
+   left: 1.2rem;
+   top: .6rem;
+}
+
+.form-links {
+   display: flex;
+   justify-content: right;
+   font-size: .9rem;
+   font-weight: 500;
+}
+
+.form-links a {
+   color: var(--main-color);
+}
+
+.signup {
+   margin-top: 1.5rem;
+   font-size: .9rem;
+   font-weight: 500;
+}
+
+.signup a {
+   color: var(--main-color);
+}
+
+.login-form input[type = "text"],
+.login-form input[type = "password"], 
+.login-form input[type = "email"] {
+   background: #27a5b89d;
+   border: none;
+   padding: 1rem 20%;
+   width: 100%;
+   border-radius: 4rem;
+   transition: .5s ease-out;}
+
+.login-form input:focus {
+   background-color: var(--bg-color);
+   border: .1rem solid var(--main-color);
+}
+
+.login-form input:hover {
+   background-color: var(--bg-color);
+}
+
+.login-form button {
+   background: var(--main-color);
+   color: #fff;
+   border: none;
+   padding: 1rem 20%;
+   border-radius: 4rem;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: 500;
+   cursor: pointer;
+   transition: .5s ease-out;
+   margin-top: 2rem;
+}
+
+.login-form button:hover {
+   border: .1rem solid var(--main-color);
+   box-shadow: 0 0 3rem var(--main-color);
+   background: #fff;
+   color: var(--text-color);
+}
+
+@media (max-width: 778px) {
+   html {
+      font-size: 85%;
+   }   
+
+   .login {
+      width: 350px;
+      padding: 2rem;
+   }
+
+      .form-item label {
+         top: .8rem;
+      }
+}
+
+@media (max-width: 450px) {
+   html {
+      font-size: 65%;
+   }
+
+   .login {
+      width: 250px;
+      padding: 2rem;
+   }
+
+      .form-item label {
+         top: 1rem;
+      }
+}

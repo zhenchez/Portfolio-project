@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: Roboto, Arial;
+  background-color: var(--background);
+  padding: 140px 30px 0 100px;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 4px;
+  margin: 4px 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(165, 165, 165);
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+:root {
+  --background: rgb(15, 15, 15); 
+  --title: rgb(241, 241, 241);
+  --details: rgb(170, 170, 170);
+}

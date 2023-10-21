@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img id="switch" src="./img/boff.jpg" onclick="toggleSwitch()">
+
+        <img id="bombilla" src="./img/off.jpg">
+    </div>
+    <div class="menu">
+        <label id="zoomLabel" for="zoom" class="oculto">Zoom</label>
+        <input id="zoom" class="oculto" name="zoom" type="range" min="0.1" max="1" step="0.1" value="1" oninput="changeZoom(this.value)">
+        <label id="brightLabel" for="bright" class="oculto">Bright</label>
+        <input id="bright" class="oculto" name="bright" type="range" min="0.1" max="1" step="0.1" value="1" oninput="changeBrightness(this.value)">
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

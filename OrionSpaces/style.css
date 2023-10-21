@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   border: none;
+   outline: none;
+   scroll-behavior: smooth;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --bg-color: #fff;
+   --second-bg-color: #ebebeb;
+   --text-color: #242627;
+   --main-color: #27a4b8;
+}
+
+html {
+   font-size: 100%;
+   overflow-x: hidden;
+}
+
+body {
+   background: var(--bg-color);
+   color: var(--text-color)
+}
+
+section {
+   min-height: 100vh;
+   padding: 10rem 9% 2rem;
+}
+
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 2rem 9%;
+   background: var(--bg-color);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+}
+
+.header.sticky {
+   border-bottom: 1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+   font-size: 2.5rem;
+   color: var(--text-color);
+   font-weight: 600;
+   cursor: default;
+}
+
+.navbar a {
+   font-size: 1.7rem;
+   color: var(--text-color);
+   margin-left: 4rem;
+   transition: .3;
+}
+
+.navbar a:hover,
+.navbar a.active {
+   color: var(--main-color);
+}
+
+#menu-icon {
+   font-size: 3.6rem;
+   color: var(--text-color);
+   display: none;
+}
+
+.home {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.home-img img {
+   width: 40vw;
+   animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+   0% {
+      transform: translateY(0);
+   }
+
+   50% {
+      transform: translateY(-2.4rem);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+
+.home-container h3 {
+   font-size: 3.2rem;
+   font-weight: 700;
+}
+
+.home-container h3:nth-of-type(2) {
+   margin-bottom: 2rem;
+}
+
+span {
+   color: var(--main-color);
+}
+
+.home-container h1 {
+   font-size: 5.6rem;
+   font-weight: 700;
+   line-height: 1.3;
+}
+
+.social-media a {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 4rem;
+   height: 4rem;
+   background: transparent;
+   border: .2rem solid var(--text-color);
+   border-radius: 50%;
+   font-size: 2rem;
+   color: var(--main-color);
+   margin: 3rem 1.5rem 3rem 0;
+   transition: .5s ease-out;
+}
+
+.social-media a:hover {
+   background: var(--main-color);
+   color: var(--second-bg-color);
+   border: .2rem solid var(--main-color);
+   box-shadow: 0 0 3rem var(--main-color);
+}
+
+.login {
+   display: inline-block;
+   padding: 1rem 2.8rem;
+   border-radius: 4rem;
+   border: .2rem solid var(--main-color);
+   box-shadow: 0 0 3em var(--text-color);
+   font-size: 1.6rem;
+   color: var(--text-color);
+   letter-spacing: .1rem;
+   font-weight: 600;
+   transition: .5s ease-out;
+}
+
+.login:hover {
+   border: .2rem solid #fff;
+   box-shadow: 0 0 3rem var(--main-color);
+}
+
+.about {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   background: linear-gradient(#fff, #000000 35%);
+   color: var(--bg-color);
+}
+
+.about-img img {
+   width: 50vh;
+}
+
+.about-container h2 {
+   text-align: left;
+   line-height: 1.2;
+}
+
+.about-container h1 {
+   text-align: left;
+   font-size: 2.6rem;
+   margin-bottom: 2rem;
+}
+
+.about-heading {
+   text-align: center;
+   font-size: 4.5rem;
+}
+
+.checkout {
+   display: inline-block;
+   padding: 1rem 2.8rem;
+   border-radius: 4rem;
+   border: .2rem solid #fff;
+   box-shadow: 0 0 3rem #fff;
+   font-size: 1.6rem;
+   color: #fff;
+   background: var(--main-color);
+   letter-spacing: .1rem;
+   font-weight: 600;
+   transition: .5s ease-out;
+}
+
+.checkout:hover {
+   border: .2rem solid var(--main-color);
+   box-shadow: 0 0 3rem var(--main-color);
+   background: var(--main-color);
+}\index.html
+
+#contact {
+   display: block;
+}
+
+.contact h2 {
+   margin-bottom: 3rem;
+   font-size: 4rem;
+}
+
+.contact form {
+   max-width: 70rem;
+   margin: 1rem auto;
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+   width: 100%;
+   padding: 1.5rem;
+   font-size: 1.6rem;
+   color: var(--text-color);
+   background: var(--second-bg-color);
+   border-radius: .8rem;
+   margin: 1rem 0;
+}
+
+.contact form .input-box input {
+   width: 49%;
+}
+
+.contact form textarea {
+   resize: none;
+}
+
+.contact form .login {
+   margin-top: 2rem;
+   cursor: pointer;
+}
+
+.footer {
+   margin-top: 8rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 2rem 9%;
+   background: #000000;
+   color: #fff;
+}
+
+.footer-container {
+   font-size: 1.6rem;
+}
+
+.footer-goTop a {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   padding: .8rem;
+   background: var(--main-color);
+   border-radius: .8rem;
+}
+
+.footer-goTop a i {
+   color: #000000;
+   font-size: 2.4rem;
+}
+
+.footer-goTop a:hover {
+   box-shadow: 0 0 3rem var(--main-color);
+   transition: .5s ease-out;
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+   html {
+      font-size: 85%;
+   }
+
+   .home-img img {
+      width: 45vw;
+   }
+
+   .about-img img {
+      width: 55vw;
+   }
+
+   .contact h2 {
+      font-size: 3rem;
+   }
+}
+
+@media (max-width: 991px) {
+   .header {
+      padding: 2rem 3%;
+   }
+
+   section {
+      padding: 10rem 3% 2rem;
+   }
+
+   .contact{
+      min-height: auto;
+   }
+
+   .footer {
+      padding: 2rem 3%;
+   }
+}
+
+@media (max-width: 768px) {
+   #menu-icon {
+      display: block;
+   }
+
+   .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--bg-color);
+      border-bottom: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, .2);
+      display: none;
+   }
+
+   .navbar.active {
+      display: block;
+   }
+
+   .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+   }
+
+   .home {
+      flex-direction: column;
+   }
+
+   .home-container h3 {
+      font-size: 2.6rem;
+   }
+   
+   .home-container h1 {
+      font-size: 5rem;
+   }
+
+   .home-img img {
+      width: 90vw;
+      margin-top: 7rem;
+   }
+
+   .about {
+      margin-top: 6rem;
+      flex-direction: column-reverse;
+      background: linear-gradient(#fff, #000000 25%);
+   }
+
+   .about img {
+      width: 90vw;
+      margin-top: 5rem;
+   }
+
+   .contact h2 {
+      font-size: 3rem;
+   }
+}

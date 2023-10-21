@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/videos.css">
+  <link rel="stylesheet" href="./styles/slidebar.css">
+  <link rel="stylesheet" href="./styles/shorts.css">
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <button class="hamburger-menu-btt"><img class="hamburger-menu" src="./icons/hamburger-menu.svg"></button>
+      <a href="https://www.youtube.com"><img class="youtube-logo" src="./img/youtube.svg"></a>
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-btt"><img class="search-icon" src="./icons/search.svg"><div class="tooltip">Search</div></button>
+      <button class="voice-search-btt"><img class="voice-search-icon" src="./icons/voice-search-icon.svg" ><div class="tooltip">Search with your voice</div></button>
+    </div>
+    <div class="right-section">
+      <button class="upload-btt"><img class="upload-icon" src="./icons/upload.svg"><div class="tooltip">Create</div></button>
+      <button class="notification-btt"><img class="notification-icon" src="./icons/notifications.svg"><div class="notification-count">3</div><div class="tooltip">Notifications</div></button>
+      <div class="personal-profile">
+        <img class="personal-profile-img" src="./profile-pic/zzbeatz.png">
+      </div>
+    </div>
+  </header>
+
+  <nav class="middle-slide-bar">
+    <div class="middle-slide-bar-btns">
+      <div class="middle-slide-btns main-all-btn">All</div>
+      <div class="middle-slide-btns">Music</div>
+      <div class="middle-slide-btns">Live</div>
+      <div class="middle-slide-btns">Gaming</div>
+      <div class="middle-slide-btns">Mixes</div>
+      <div class="middle-slide-btns">Playlists</div>
+      <div class="middle-slide-btns">Beats</div>
+      <div class="middle-slide-btns">Podcasts</div>
+      <div class="middle-slide-btns">Recently uploaded</div>
+      <div class="middle-slide-btns">Anime</div>
+      <div class="middle-slide-btns">Cars</div>
+      <div class="middle-slide-btns">Watched</div>
+      <div class="middle-slide-btns">Computers</div>
+      <div class="middle-slide-btns">HTML</div>
+      <div class="middle-slide-btns">Breakcore</div>
+      <div class="middle-slide-btns">Drum & Bass </div>
+      <div class="middle-slide-btns">Background music</div>
+      <div class="middle-slide-btns">Freestyle Rap</div>
+      <div class="middle-slide-btns">Gadgets</div>
+      <div class="middle-slide-btns">Action-adventure games</div>
+      <div class="middle-slide-btns">Lo-fi</div>
+      <div class="middle-slide-btns">DJ mix</div>
+      <div class="middle-slide-btns">Thoughts</div>
+      <div class="middle-slide-btns">CSS</div>
+      <div class="middle-slide-btns">Soundtracks</div>
+    </div>
+    <div class="next-btn-container">
+      <button class="next-btn"><img src="./icons/next.svg"><div class="tooltip">Next</div></button>
+    </div>
+  </nav>
+
+  <nav class="left-slide-bar">
+    <button class="left-slide-btns home-btn">
+      <img src="./icons/home.svg">
+      <p class="icon-label">Home</p>
+    </button>
+    <button class="left-slide-btns shorts-btn">
+      <img src="./icons/shorts2.svg">
+      <p class="icon-label">Shorts</p>
+    </button>
+    <button class="left-slide-btns sub-btn">
+      <img src="./icons/subscriptions.svg">
+      <p class="icon-label">Subscriptions</p>
+    </button>
+    <button class="left-slide-btns library-btn">
+      <img src="./icons/library.svg">
+      <p class="icon-label">Library</p>
+    </button>
+    <button class="left-slide-btns history-btn">
+      <img src="./icons/history.svg">
+      <p class="icon-label">History</p>
+    </button>
+  </nav>
+
+  <main>
+    <section class="video-container-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=vLLIRQiZCd0"><img class="thumbnail" src="./thumbnails/thumbnail1.webp"></a>
+          <div class="video-duration">1:53:30</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="./profile-pic/profile-pic1.jpg">
+            <div class="channel-tooltip">
+              <img class="profile-picture" src="./profile-pic/profile-pic1.jpg">
+              <div class="channel-details">
+                <div class="channel-name">night gaze</div>
+                <div class="channel-subs">33.6K subscribers</div>
+              </div>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">heartbreak (playlist)</p>
+            <a class="video-channel">night gaze</a>
+            <p class="video-stats">1.2M views &middot; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=1R47EQrxgfw"><img class="thumbnail" src="./thumbnails/thumbnail2.webp"></a>
+          <div class="video-duration">3:14:15</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="./profile-pic/profile-pic2.jpg">
+            <div class="channel-tooltip">
+              <img class="profile-picture" src="./profile-pic/profile-pic2.jpg">
+              <div class="channel-details">
+                <div class="channel-name">made from dreams</div>
+                <div class="channel-subs">36.7K subscribers</div>
+              </div>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">calm your heart</p>
+            <p class="video-channel">made from dreams</p>
+            <p class="video-stats">692K views &middot; 1 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=v_OXMy8x2eo"><img class="thumbnail" src="./thumbnails/thumbnail3.webp"></a>
+          <div class="video-duration">2:57:19</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="./profile-pic/profile-pic3.jpg">
+            <div class="channel-tooltip">
+              <img class="profile-picture" src="./profile-pic/profile-pic3.jpg">
+              <div class="channel-details">
+                <div class="channel-name">chilli music <span class="verified">&check;</span></div>
+                <div class="channel-subs">261K subscribers</div>
+              </div>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Lofi hip hop mix ~ Stress Relief, Relaxing Music</p>
+            <p class="video-channel">chilli music <span class="verified">&check;</span></p>
+            <p class="video-stats">1.8M views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=kX3nB4PpJko"><img class="thumbnail" src="./thumbnails/thumbnail4.webp"></a>
+          <div class="video-duration">15:37</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="./profile-pic/profile-pic4.jpg">
+            <div class="channel-tooltip">
+              <img class="profile-picture" src="./profile-pic/profile-pic4.jpg">
+              <div class="channel-details">
+                <div class="channel-name">MrBeast <span class="verified">&check;</span></div>
+                <div class="channel-subs">203M subscribers</div>
+              </div>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Last To Take Hand Off Jet, Keeps it!</p>
+            <p class="video-channel">MrBeast <span class="verified">&check;</span></p>
+            <p class="video-stats">144M views &middot; 11 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=_aC_QCn86rI"><img class="thumbnail" src="./thumbnails/thumbnail5.webp"></a>
+          <div class="video-duration">33:27</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="./profile-pic/profile-pic5.jpg">
+            <div class="channel-tooltip">
+              <img class="profile-picture" src="./profile-pic/profile-pic5.jpg">
+              <div class="channel-details">
+                <div class="channel-name">Lethal Crysis <span class="verified">&check;</span></div>
+                <div class="channel-subs">4.86M subscribers</div>
+              </div>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">IRAN IN 2023: What's life like?</p>
+            <p class="video-channel">Lethal Crysis <span class="verified">&check;</span></p>
+            <p class="video-stats">1.3M views &middot; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=3UurzPElJFA"><img class="thumbnail" src="./thumbnails/thumbnail6.webp"></a>
+          <div class="video-duration">15:31</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="./profile-pic/profile-pic6.jpg">
+            <div class="channel-tooltip">
+              <img class="profile-picture" src="./profile-pic/profile-pic6.jpg">
+              <div class="channel-details">
+                <div class="channel-name">Deividcat <span class="verified">&check;</span></div>
+                <div class="channel-subs">1.24M subscribers</div>
+              </div>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Probé una TIENDA para perros con MAL TIEMPO</p>
+            <p class="video-channel">Deividcat <span class="verified">&check;</span></p>
+            <p class="video-stats">370K views &middot; 11 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="more-1 video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=iXWiLZOPQZs"><img class="thumbnail" src="./thumbnails/thumbnail7.webp"></a>
+          <div class="video-duration">9:40</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="./profile-pic/profile-pic7.jpg">
+            <div class="channel-tooltip">
+              <img class="profile-picture" src="./profile-pic/profile-pic7.jpg">
+              <div class="channel-details">
+                <div class="channel-name">Ibai <span class="verified">&check;</span></div>
+                <div class="channel-subs">11.2M subscribers</div>
+              </div>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">TIENE UNA CASA SIN MUEBLES - REACCIONANDO A TACAÑOS EXTREMOS</p>
+            <p class="video-channel">Ibai <span class="verified">&check;</span></p>
+            <p class="video-stats">1.9M views &middot; 3 weeks ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="more-1 video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=5kJljpC5sHE"><img class="thumbnail" src="./thumbnails/thumbnail8.webp"></a>
+          <div class="video-duration">3:01</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="./profile-pic/profile-pic8.jpg">
+            <div class="channel-tooltip">
+              <img class="profile-picture" src="./profile-pic/profile-pic8.jpg">
+              <div class="channel-details">
+                <div class="channel-name">FYQD-Studio</div>
+                <div class="channel-subs">6.14K subscribers</div>
+              </div>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">【Secluded Orchid】Unreal Engine 5 - Tech Demo</p>
+            <p class="video-channel">FYQD-Studio</p>
+            <p class="video-stats">211K views &middot; 3 weeks ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="more-2 video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=nC1DqpYj18g"><img class="thumbnail" src="./thumbnails/thumbnail9.avif"></a>
+          <div class="video-duration">6:56</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="./profile-pic/profile-pic9.jpg">
+            <div class="channel-tooltip">
+              <img class="profile-picture" src="./profile-pic/profile-pic9.jpg">
+              <div class="channel-details">
+                <div class="channel-name">FORMULA 1 <span class="verified">&check;</span></div>
+                <div class="channel-subs">9.56M subscribers</div>
+              </div>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Sprint Shootout Highlights | 2023 United States Grand Prix</p>
+            <p class="video-channel">FORMULA 1 <span class="verified">&check;</span></p>
+            <p class="video-stats">65K views &middot; 17 minutes ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="more-2 video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=0oZ86uJ6A44"><img class="thumbnail" src="./thumbnails/thumbnail10.avif"></a>
+          <div class="video-duration">28:00</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="./profile-pic/profile-pic10.jpg">
+            <div class="channel-tooltip">
+              <img class="profile-picture" src="./profile-pic/profile-pic10.jpg">
+              <div class="channel-details">
+                <div class="channel-name">vicesat <span class="verified">&check;</span></div>
+                <div class="channel-subs">3.54M subscribers</div>
+              </div>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">TRUCOS | Restaurar Un Coche De Carreras Abandonado</p>
+            <p class="video-channel">vicesat <span class="verified">&check;</span></p>
+            <p class="video-stats">810K views &middot; 1 day ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shorts-container">
+      <div class="shorts-header">
+        <img src="./img/shorts-logo.png">
+        <p>Shorts</p>
+      </div>
+      <div class="shorts-grid">
+        <div class="shorts">
+          <div class="short-thumbnail-container">
+            <img class="short-thumbnail" src="./shorts-thumbnails/thum1.avif">
+          </div>
+          <div class="short-detail">
+            <div class="short-title">BRUSCHIMICHIS 98 - #shorts</div>
+            <div class="short-stats">1M views</div>
+          </div>
+        </div>
+        <div class="shorts">
+          <div class="short-thumbnail-container">
+            <img class="short-thumbnail" src="./shorts-thumbnails/thum2.avif">
+          </div>
+          <div class="short-detail">
+            <div class="short-title">Mr. Beast vs Dude Perfect 🏀💀</div>
+            <div class="short-stats">135M views</div>
+          </div>
+        </div>
+        <div class="shorts">
+          <div class="short-thumbnail-container">
+            <img class="short-thumbnail" src="./shorts-thumbnails/thum3.avif">
+          </div>
+          <div class="short-detail">
+            <div class="short-title">Los peligros de tener (Bulldog françes)</div>
+            <div class="short-stats">3.1M views</div>
+          </div>
+        </div>
+        <div class="show1 shorts">
+          <div class="short-thumbnail-container">
+            <img class="short-thumbnail" src="./shorts-thumbnails/thum4.avif">
+          </div>
+          <div class="short-detail">
+            <div class="short-title">Comedy moments in football 🤣 #shorts</div>
+            <div class="short-stats">155M views</div>
+          </div>
+        </div>
+        <div class="show2 shorts">
+          <div class="short-thumbnail-container">
+            <img class="short-thumbnail" src="./shorts-thumbnails/thum5.avif">
+          </div>
+          <div class="short-detail">
+            <div class="short-title">Organix SVD</div>
+            <div class="short-stats">4.4M views</div>
+          </div>
+        </div>
+        <div class="show3 shorts">
+          <div class="short-thumbnail-container">
+            <img class="short-thumbnail" src="./shorts-thumbnails/thum6.webp">
+          </div>
+          <div class="short-detail">
+            <div class="short-title">Mac 10 😳😳</div>
+            <div class="short-stats">7.3M views</div>
+          </div>
+        </div>
+        <div class="show4 shorts">
+          <div class="short-thumbnail-container">
+            <img class="short-thumbnail" src="./shorts-thumbnails/thum7.avif">
+          </div>
+          <div class="short-detail">
+            <div class="short-title">He made a Ferrari out of snow 😱</div>
+            <div class="short-stats">73M views</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

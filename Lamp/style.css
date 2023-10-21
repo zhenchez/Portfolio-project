@@ -1,0 +1,22 @@
+html {
+    background-color: black;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#switch {
+    align-self: center;
+    justify-self: center;
+}
+#bombilla {
+    align-self: center;
+    justify-self: center;
+    height: 50vh;
+    transition: opacity 1s ease;
+}
+.oculto {
+    color: white;
+    opacity: 0;
+}
