@@ -1,3 +1,7 @@
+.shorts-container {
+  margin-bottom: 20px;
+}
+
 .shorts-header {
   display: flex;
   margin: 60px 14px 20px 14px;
