@@ -9,8 +9,8 @@ projects.forEach((project, i) => {
   });
 });
 
-links.forEach((link) => {
-  link.addEventListener("click", (e) => {
+links.forEach(link => {
+  link.addEventListener("click", e => {
     e.preventDefault();
 
     const target = link.getAttribute("href").substring(1);
@@ -24,7 +24,8 @@ links.forEach((link) => {
     }
   });
 });
-backToTop.addEventListener("click", (e) => {
+
+backToTop.addEventListener("click", e => {
   e.preventDefault();
 
   const target = backToTop.getAttribute("href").substring(1);
@@ -37,3 +38,23 @@ backToTop.addEventListener("click", (e) => {
     });
   }
 });
+
+function validatePhone(event, value, maxLength) {
+  if (value != undefined && value.toString().length >= maxLength) {
+    event.preventDefault();
+  }
+}
+
+function resetInputs() {
+  document.getElementById("name").value = "";
+  document.getElementById("mail").value = "";
+  document.getElementById("phone").value = "";
+  document.getElementById("subject").value = "";
+  document.querySelector(".message").value = "";
+}
+
+function submitAlert() {
+  const alertName = document.getElementById("name").value;
+  alert(`${alertName}, thanks for contacting me!`);
+  resetInputs();
+}

@@ -1,0 +1,36 @@
+.header {
+  background-color: #f2f6fd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 18px 0;
+  z-index: 100;
+  border-radius: 0 0 100px 100px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.logo {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  cursor: default;
+  font-weight: bold;
+  margin: 0 75px;
+}
+.header nav {
+  margin-right: 75px;
+}
+.header-links {
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color, 0.15s;
+}
+.header-links:hover {
+  color: #851fbd;
+}

@@ -1,0 +1,84 @@
+.contact-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f6fd;
+  text-align: center;
+  margin: 40px 75px;
+  padding-bottom: 40px;
+  border: 1px solid #851fbd;
+  border-radius: 5px;
+}
+.contact-heading {
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.input-box input {
+  border: 1px solid #422871;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 4px 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #4228711f;
+  transition: 0.3s ease-out;
+}
+.input-box input:focus,
+.message:focus {
+  outline: none;
+  background-color: #806ee7;
+  color: white;
+  box-shadow: none;
+}
+.message {
+  border: 1px solid #422871;
+  width: 635px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 4px 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #4228711f;
+  transition: 0.3s ease-out;
+  resize: none;
+}
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+.submit {
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background-color: #806ee7;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #9c7fd1;
+  transform: scale(1.03);
+}
+.google-maps {
+  margin: 40px;
+}
+.maps-img {
+  width: 560px;
+  border: 1px solid #422871;
+  border-radius: 5px;
+}
+
+@media (max-width: 1600px) {
+  .contact-me {
+    flex-direction: column;
+  }
+}
+@media (max-width: 840px) {
+  .message {
+    width: 300px;
+  }
+  .maps-img {
+    width: 90%;
+  }
+}
